@@ -7,6 +7,7 @@
     <!-- linked bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- linked to style.css -->
     <link rel="stylesheet" href="assets/style.css">
     <!-- changed title to "Date Night" -->
@@ -14,10 +15,41 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <p class="navbar-brand">Weather Dashboard</p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input-fields">
+                <h1>Check the Weather</h1>
+                <input type="text" id="place" placeholder="Location">
+                <button type="submit" onclick="getWeather();">Submit</button>
+            </div>
+            <div id="errorMessage"></div>
+            <div id="weatherInfo" class="card" style="display: none;">
+                <div><strong class="city"></strong></div>
+                <div class="temp">
+                    <img src="" alt="icon">
+                    <span></span>
+                </div>
+                <table></table>
+            </div>
+
+        </div>
 
 
 
-    <!-- linked to script.js -->
+        <footer class="mt-5 p-3 text-center bg-light">
+        </footer>
+
+    </main>
+
+
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/script.js"></script>
 </body>
 
